@@ -1,0 +1,75 @@
+--------------------------------------------------------------------------------------
+using System;
+
+namespace energia{
+
+    class Energy{
+
+        public void precokw(){    
+
+            Console.WriteLine("Informe o valor de consumo em KW: ");
+            double consumo = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Informe o tempo ligado em horas: ");
+            int tempo = Convert.ToInt32(Console.ReadLine());
+
+            double consumoTotal = consumo * tempo;
+
+            float preco = consumoTotal * 0.40;
+
+            Console.WriteLine("O valor a ser pago será de: R$" + preco);
+        }
+    }
+}
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+using System;
+
+namespace math{
+
+    class Math{
+
+        public void calculo(int n){
+            Console.WriteLine("Digite um número: ");
+            int n = Console.ReadLine();
+            Console.WriteLine(n - 1, n + 1, n / 2, n * 2);
+        }
+    }
+}
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+using System;
+
+namespace circuito{
+
+    class Circuito{
+
+        public void resistencia(int r1, int r2, int r3){    
+
+            float resultado = ((r1/r2) + r3);
+
+            Console.WriteLine("O resultado será: " + resultado);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
