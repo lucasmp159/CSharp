@@ -1,4 +1,65 @@
 using System;
+namespace Principal
+{
+public class Detetive{
+
+   public void crime(){
+		int count = 0;
+	   	Console.WriteLine("Telefonou para a vítima?");
+	    string resposta = Console.ReadLine();
+	   	 if (resposta == "sim"){
+			count++;
+		}
+	   Console.WriteLine("Esteve no local do crime?");
+	   string resposta1 = Console.ReadLine();
+	     if (resposta1 == "sim"){
+			count++;
+		}
+	   Console.WriteLine("Mora perto da vítima?");
+	   string resposta2 = Console.ReadLine();
+	     if (resposta2 == "sim"){
+			count++;
+		}
+	   Console.WriteLine("Devia para a vítima? ");
+	   string resposta3 = Console.ReadLine();
+		 if (resposta3 == "sim"){
+			count++;
+		}
+	   Console.WriteLine("Já trabalhou com a vítima?");
+	   string resposta4 = Console.ReadLine();
+	     if (resposta4 == "sim"){
+			count++;
+		 }
+	   switch(count){
+		   case 2:
+				   Console.WriteLine("Suspeita");
+				   break;
+		   case 3:
+				   Console.WriteLine("Cúmplice");
+			   	   break;
+		   case 4:
+				   Console.WriteLine("Cúmplice");
+			   	   break;	
+		   case 5:
+				   Console.WriteLine("Assassino");
+			   	   break;
+		   default:
+				   Console.WriteLine("Inocente");
+				   break;									
+	   }
+	}
+}			
+        public class Principal {
+        public static void Main(String[] args){
+            Detetive obj = new Detetive();
+            obj.crime();
+        }
+    }
+}
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+using System;
 
 namespace Principal
 
@@ -129,6 +190,39 @@ namespace Principal
         public static void Main(String[] args){
             Maior obj = new Maior();
             obj.maiormenor();
+        }
+    }
+}
+--------------------------------------------------------------
+--------------------------------------------------------------
+using System;
+namespace Principal
+{
+	    public class Aluno{
+
+   public void mediaNota(){
+			Console.WriteLine("Digite a primeira nota: ");
+			double n1 = double.Parse(Console.ReadLine());
+			Console.WriteLine("Digite a segunda nota: ");
+			double n2 = double.Parse(Console.ReadLine());
+	   		Console.WriteLine("Digite a terceira nota: ");
+			double n3 = double.Parse(Console.ReadLine());
+			Console.WriteLine("Digite a quarta nota: ");
+			double n4 = double.Parse(Console.ReadLine());
+	   		double media = ((n1 + n2 + n3 + n4)/4);
+	   		if (media == 10){
+				Console.WriteLine(media + " - Aprovado com Distinção");
+			} else if (media >= 7){
+				Console.WriteLine(media + " - Aprovado");
+			} else {
+				Console.WriteLine(media + " - Reprovado");
+		}
+    }
+}			
+        public class Principal {
+        public static void Main(String[] args){
+            Aluno obj = new Aluno();
+            obj.mediaNota();
         }
     }
 }
