@@ -1,3 +1,65 @@
+using System;
+
+namespace Principal
+
+{
+
+        public class Combustivel{
+
+
+
+        public void preco(){
+
+            float preco;
+
+            Console.WriteLine("Escolha a quantidade em L de Alcool: ");
+
+            float alcool = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Escolha a quantidade em L de Gasolina: ");
+
+            float gasolina = float.Parse(Console.ReadLine());
+
+            if (alcool <= 20){
+
+                preco = (float)(alcool * 0.97);
+
+            } else {
+
+                preco = (float) (alcool * 0.95);
+
+            } 
+
+            if (gasolina <= 20){
+
+                preco = (float)(gasolina * 0.96);
+
+            } else {
+
+                preco = (float)(gasolina * 0.94);
+
+            } 
+
+            Console.WriteLine(preco);
+
+        }    
+
+    }
+
+        public class Principal {
+
+        public static void Main(String[] args){
+
+            Combustivel obj = new Combustivel();
+
+            obj.preco();
+
+        }
+
+    }
+
+}
+------------------------------------------------------------
 ------------------------------------------------------------
 using System;
 namespace Principal
