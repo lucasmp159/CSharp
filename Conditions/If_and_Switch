@@ -44,3 +44,29 @@ namespace Principal
 }
 ------------------------------------------------------------
 ------------------------------------------------------------
+using System;
+namespace Principal
+{
+	    public class Maior{
+
+   public void maiormenor(){
+			Console.WriteLine("Digite um número: ");
+			int a = int.Parse(Console.ReadLine());
+			Console.WriteLine("Digite um número: ");
+			int b = int.Parse(Console.ReadLine());
+	   		if (a > b){
+				Console.WriteLine("O Primeiro número é maior!");
+			} else if (a == b){
+				Console.WriteLine("Os números são iguais.");
+			} else {
+				Console.WriteLine("O Segundo número é maior!");
+		}
+    }
+}			
+        public class Principal {
+        public static void Main(String[] args){
+            Maior obj = new Maior();
+            obj.maiormenor();
+        }
+    }
+}
