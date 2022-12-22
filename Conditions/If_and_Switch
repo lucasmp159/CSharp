@@ -1,0 +1,46 @@
+------------------------------------------------------------
+using System;
+namespace Principal
+{
+	    public class Calendario{
+
+   public void weekday(){
+			Console.WriteLine("Digite um n: ");
+			int day = int.Parse(Console.ReadLine());
+			switch(day){
+				case 1:
+					Console.WriteLine("1 - Domingo.");
+                    break;
+				case 2:
+					Console.WriteLine("2 - Segunda.");
+                    break;
+                case 3:
+                    Console.WriteLine("3 - Terça.");
+                    break;
+                case 4:
+                    Console.WriteLine("4 - Quarta.");
+                    break;
+                case 5:
+                    Console.WriteLine("5 - Quinta.");
+                    break;
+                case 6:
+                    Console.WriteLine("6 - Sexta.");
+                    break;
+                case 7:
+                    Console.WriteLine("7 - Sábado.");
+                    break;
+				default:
+					Console.WriteLine("Valor inválido!!");
+					break;
+			}
+		}
+    }
+        public class Principal {
+        public static void Main(String[] args){
+            Calendario obj = new Calendario();
+            obj.weekday();
+        }
+    }
+}
+------------------------------------------------------------
+------------------------------------------------------------
