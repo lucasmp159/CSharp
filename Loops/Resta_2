@@ -1,0 +1,21 @@
+using System;
+namespace Principal
+{
+public class Teste{
+
+   public void test(){
+		for (int i = 1000;  i <= 2000; i++){
+			double resultado = i % 11;
+	   		if (resultado == 2){
+				Console.WriteLine(i);
+			}
+	   }
+	}
+}			
+        public class Principal {
+        public static void Main(String[] args){
+            Teste obj = new Teste();
+            obj.test();
+        }
+    }
+}
