@@ -1,0 +1,21 @@
+using System;
+namespace Principal
+{
+public class Tabuada{
+
+   public void tabuadadeDez(){
+	   Console.WriteLine("Escolha um número para realizar a tabuada: ");
+	   int n = Convert.ToInt32((Console.ReadLine()));
+	   for (int i = 1; i <= 10; i++){
+		   int resultado = n * i;
+		   Console.WriteLine(n + " * " + i + " = " + resultado);	
+	   }
+	}
+}			
+        public class Principal {
+        public static void Main(String[] args){
+            Tabuada obj = new Tabuada();
+            obj.tabuadadeDez();
+        }
+    }
+}
