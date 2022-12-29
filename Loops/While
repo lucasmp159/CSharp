@@ -1,0 +1,26 @@
+using System;
+namespace Principal
+{
+public class Teste{
+
+   public void test(){
+	    Console.WriteLine("Escolha um número: ");
+	    int n = Convert.ToInt32((Console.ReadLine()));
+		int i = 0;
+	    while (n > i){
+			i++;
+			if (i % 2 == 0){
+				Console.WriteLine(i + " PAR");
+			} else {
+				Console.WriteLine(i + " IMPAR");
+			}
+	   }
+	}
+}			
+        public class Principal {
+        public static void Main(String[] args){
+            Teste obj = new Teste();
+            obj.test();
+        }
+    }
+}
