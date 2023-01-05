@@ -1,0 +1,45 @@
+using System;
+
+namespace teste
+{
+	public class test {
+		
+		public void testando(){
+			Console.WriteLine("Digite um número: ");
+			int n = Convert.ToInt32(Console.ReadLine());		
+			do {
+				if (0 <= n && n <= 25){
+					Console.WriteLine(n + " Está no intervalo [0-25]");
+					Console.WriteLine("Digite um número: ");
+					n = Convert.ToInt32(Console.ReadLine());
+				}
+				if (26 <= n && n <= 50){
+					Console.WriteLine(n + " Está no intervalo [26-50]");
+					Console.WriteLine("Digite um número: ");
+					n = Convert.ToInt32(Console.ReadLine());
+				}
+				if (51 <= n && n <= 75){
+					Console.WriteLine(n + " Está no intervalo [51-75]");
+					Console.WriteLine("Digite um número: ");
+					n = Convert.ToInt32(Console.ReadLine());
+				}
+				if (76 <= n && n <= 100){
+					Console.WriteLine(n + " Está no intervalo [76-100]");
+					Console.WriteLine("Digite um número: ");
+					n = Convert.ToInt32(Console.ReadLine());
+				}
+				if (n < 0)
+					Console.WriteLine(n + " O número inserido é negativo, portanto o programa vai parar");
+					break;
+				}while (n <= 100);
+		}
+	}
+
+	public class Program
+	{
+			public static void Main(String[] args){
+				test obj = new test();
+				obj.testando();
+		}
+	}
+}
