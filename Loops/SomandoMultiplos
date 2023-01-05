@@ -1,0 +1,26 @@
+using System;
+// Somando multiplos de 3.
+
+namespace teste
+{
+	public class test {
+		
+		public void testando(){
+			int res = 0;
+			for (int i = 1; i <= 9; i++){
+				if (i % 3 == 0){
+					res = i + res;
+				}
+			}
+			Console.WriteLine("A soma total de multiplos de 3 entre 1-500 será de: " + res);
+		}
+	}
+
+	public class Program
+	{
+			public static void Main(String[] args){
+				test obj = new test();
+				obj.testando();
+		}
+	}
+}
