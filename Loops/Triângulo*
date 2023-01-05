@@ -1,0 +1,36 @@
+using System;
+
+namespace teste
+{
+	public class test {
+		
+		public void testando(){
+			Console.WriteLine("Digite a altura do triângulo: ");
+			int x = Convert.ToInt32(Console.ReadLine());
+			for (int i = 0; i <= x; i++)
+        {
+            for (int j = x; j > i; j--)
+            {
+                Console.Write(" ");
+            }
+            for (int j = 0; j <= i; j++)
+            {
+                Console.Write("*");
+            }
+            for (int j = 0; j < i; j++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
+		}
+	}
+
+	public class Program
+	{
+			public static void Main(String[] args){
+				test obj = new test();
+				obj.testando();
+		}
+	}
+}
