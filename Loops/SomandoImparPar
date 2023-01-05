@@ -1,0 +1,36 @@
+using System;
+
+namespace teste
+{
+	public class test {
+		
+		public void testando(){
+			int pares = 0;
+			int impar = 0;
+			Console.WriteLine("Digite um número: ");
+			int n = Convert.ToInt32(Console.ReadLine());
+			do{
+				if (n % 2 == 0){
+					pares = n + pares;
+					Console.WriteLine("Digite um número: ");
+			        n = Convert.ToInt32(Console.ReadLine());
+				}
+				if (n % 2 == 1){
+					impar = n + impar;
+					Console.WriteLine("Digite um número: ");
+			        n = Convert.ToInt32(Console.ReadLine());
+				}
+			}while(n > 0);
+			Console.WriteLine("O resultado da soma dos números impares: " + impar + 
+							 "\r\nO resultado da soma dos números pares: " + pares);
+		}
+	}
+
+	public class Program
+	{
+			public static void Main(String[] args){
+				test obj = new test();
+				obj.testando();
+		}
+	}
+}
