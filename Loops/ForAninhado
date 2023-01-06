@@ -4,10 +4,12 @@ namespace teste
 {
 	public class test {
 		public void testando(){
-			int soma = 0;
-			for (int n = 1; n <=29; n += 2)
-				for (int s = 1; s <= 15; s++)
-					soma += (n/s);
+			float soma = 0;
+			float fracao = 0;
+			for (float n = 1; n <=3; n += 2)
+				for (float s = 1; s <= 2; s++)
+					fracao = (n/s);
+					soma = fracao++;
 			Console.WriteLine("A soma da fração dos números será: " + soma);
 		}
 	}
