@@ -1,0 +1,20 @@
+using System;
+
+namespace teste
+{
+	public class test {
+		public void testando(){
+			int soma = 0;
+			for (int n = 1; n <=29; n += 2)
+				for (int s = 1; s <= 15; s++)
+					soma += (n/s);
+			Console.WriteLine("A soma da fração dos números será: " + soma);
+		}
+	}
+	public class Program{
+				public static void Main(String[] args){
+					test obj = new test();
+					obj.testando();
+			}
+		}
+	}
