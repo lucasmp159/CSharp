@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+
+namespace teste
+{
+	public class test {
+		public void testando(){
+			List<int> num = new List<int>();
+			
+			num.Add(0);
+			num.Add(1);
+			num.Add(2);
+			num.Add(3);
+			num.Add(4);
+			num.Add(5);
+			
+			num.Capacity = 6;
+			
+			Console.WriteLine(num.Capacity);
+			
+			int x = num[1]; 
+			int y = num[3];
+			
+			int soma = (x + y);
+			
+			Console.WriteLine(soma);
+		}
+	}
+	public class Program{
+				public static void Main(String[] args){
+					test obj = new test();
+					obj.testando();
+			}
+		}
+	}
