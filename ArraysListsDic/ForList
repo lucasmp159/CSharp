@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+
+namespace teste
+{
+	public class test {
+		public void testando(){
+			List<int> num = new List<int>();
+			for (int i = 0; i <= 10; i ++){
+				int n = 0;
+				if (i > 10)
+					Console.WriteLine(num[n]);
+				if (n < 0) {
+					num.Add(0);
+					Console.WriteLine("Escolha um número para a lista: ");
+					n = Convert.ToInt32(Console.ReadLine());
+				}
+				if (n > 0)
+					num.Add(n);
+					Console.WriteLine("Escolha um número para a lista: ");
+					n = Convert.ToInt32(Console.ReadLine());
+			}
+		}
+	}
+	public class Program{
+				public static void Main(String[] args){
+					test obj = new test();
+					obj.testando();
+			}
+		}
+	}
